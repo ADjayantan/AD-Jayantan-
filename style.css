@@ -265,6 +265,19 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+
+.skill-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.skill-card li i {
+  width: 1rem;
+  color: var(--secondary);
+}
+
 .project-single p {
   margin-top: 0.75rem;
   color: var(--muted);
