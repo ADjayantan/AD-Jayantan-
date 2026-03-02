@@ -1,16 +1,15 @@
-/* ===== Base ===== */
 :root {
   --bg: #0a0f1f;
-  --bg-accent: #111938;
-  --surface: #111a31;
-  --surface-soft: #172443;
+  --bg-accent: #121d3d;
+  --surface: #141f3d;
+  --surface-soft: #1a2950;
   --text: #ecf2ff;
   --muted: #b6c2e1;
   --primary: #7c8cff;
   --secondary: #2ee6d6;
   --line: rgba(255, 255, 255, 0.12);
-  --radius: 20px;
-  --shadow: 0 14px 38px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+  --shadow: 0 14px 36px rgba(0, 0, 0, 0.34);
   --max-width: 1120px;
 }
 
@@ -26,7 +25,7 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  background: radial-gradient(circle at 80% -10%, #24356e 0%, var(--bg) 40%), var(--bg);
+  background: radial-gradient(circle at 85% -15%, #2a3f7f 0%, var(--bg) 45%), var(--bg);
   color: var(--text);
   line-height: 1.65;
 }
@@ -37,25 +36,26 @@ body {
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 5.6rem 0;
 }
 
 .tone-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.2;
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-size: clamp(2rem, 4.8vw, 3.2rem);
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
 }
 
 a {
@@ -64,11 +64,11 @@ a {
 }
 
 .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--secondary);
   font-weight: 700;
-  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.76rem;
   margin-bottom: 0.65rem;
 }
 
@@ -76,15 +76,18 @@ a {
   margin-bottom: 2rem;
 }
 
-/* ===== Header ===== */
+.section-note {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(10, 15, 31, 0.72);
-  backdrop-filter: blur(14px);
-  transition: border-color 0.25s ease;
+  background: rgba(10, 15, 31, 0.78);
   border-bottom: 1px solid transparent;
+  backdrop-filter: blur(12px);
 }
 
 .site-header.scrolled {
@@ -101,13 +104,13 @@ a {
 
 .brand {
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.2rem;
+  list-style: none;
+  gap: 1rem;
 }
 
 .nav-links a {
@@ -122,12 +125,11 @@ a {
 
 .menu-toggle {
   display: none;
-  background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 12px;
   width: 42px;
   height: 42px;
-  cursor: pointer;
+  border-radius: 11px;
+  border: 1px solid var(--line);
+  background: transparent;
 }
 
 .menu-toggle span {
@@ -138,18 +140,17 @@ a {
   background: var(--text);
 }
 
-/* ===== Components ===== */
 .card {
-  background: linear-gradient(140deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 1.45rem;
+  padding: 1.4rem;
   box-shadow: var(--shadow);
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.24s ease, border-color 0.24s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   border-color: rgba(124, 140, 255, 0.55);
 }
 
@@ -158,9 +159,9 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.82rem 1.2rem;
   border-radius: 12px;
   font-weight: 700;
+  padding: 0.8rem 1.15rem;
   border: 1px solid transparent;
   transition: transform 0.2s ease;
 }
@@ -170,13 +171,12 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(120deg, var(--primary), #6779ff);
+  background: linear-gradient(120deg, var(--primary), #5f73ff);
   color: #fff;
 }
 
 .btn-secondary {
   border-color: var(--line);
-  color: var(--text);
 }
 
 .social-links {
@@ -188,9 +188,9 @@ a {
   width: 40px;
   aspect-ratio: 1;
   border-radius: 999px;
+  border: 1px solid var(--line);
   display: grid;
   place-items: center;
-  border: 1px solid var(--line);
   color: var(--muted);
 }
 
@@ -199,7 +199,6 @@ a {
   border-color: rgba(46, 230, 214, 0.7);
 }
 
-/* ===== Hero ===== */
 .hero {
   min-height: calc(100vh - 74px);
   display: grid;
@@ -208,46 +207,43 @@ a {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.3fr 0.7fr;
   gap: 1rem;
 }
 
 .hero-copy p {
   color: var(--muted);
-  margin-top: 1rem;
+  margin-top: 0.95rem;
   max-width: 64ch;
 }
 
 .hero-copy h2 {
-  margin-top: 0.55rem;
-  color: #ccd6f4;
+  margin-top: 0.6rem;
+  color: #d3dcf7;
 }
 
 .hero-actions {
+  margin: 1.35rem 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
-  margin: 1.45rem 0;
+  gap: 0.7rem;
 }
 
 .hero-card ul {
   list-style: none;
-  margin-top: 0.95rem;
   display: grid;
-  gap: 0.75rem;
+  gap: 0.7rem;
+  margin-top: 0.85rem;
   color: var(--muted);
 }
 
 .hero-card i {
-  width: 18px;
+  margin-right: 0.4rem;
   color: var(--secondary);
-  margin-right: 0.35rem;
 }
 
-/* ===== Grids ===== */
 .about-grid,
 .skills-grid,
-.projects-grid,
 .contact-grid {
   display: grid;
   gap: 1rem;
@@ -257,35 +253,51 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.about-grid ul,
+.skill-card ul,
+.learning-list,
+.project-columns ul {
+  list-style-position: inside;
+  color: var(--muted);
+}
+
 .skills-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.skill-card ul {
-  margin-top: 0.8rem;
+.project-single p {
+  margin-top: 0.75rem;
   color: var(--muted);
-  list-style-position: inside;
 }
 
-.projects-grid {
+.project-single .tech-stack a {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.project-columns {
+  margin-top: 1rem;
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.project-card p {
-  color: var(--muted);
-  margin-top: 0.72rem;
-}
-
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.project-columns h4 {
+  margin-bottom: 0.45rem;
+}
+
+.outcome {
   margin-top: 1rem;
 }
 
-.project-links a {
-  color: var(--secondary);
-  font-weight: 700;
+.learning-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.resume-card {
+  display: grid;
+  gap: 1rem;
 }
 
 .contact-grid {
@@ -294,7 +306,7 @@ a {
 
 .contact-info p {
   color: var(--muted);
-  margin-top: 0.55rem;
+  margin-top: 0.5rem;
 }
 
 .contact-form {
@@ -310,12 +322,12 @@ a {
 
 .contact-form input,
 .contact-form textarea {
-  font: inherit;
-  color: var(--text);
   background: var(--surface-soft);
   border: 1px solid var(--line);
-  border-radius: 11px;
-  padding: 0.78rem 0.85rem;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  font: inherit;
 }
 
 .contact-form input:focus,
@@ -332,16 +344,15 @@ a {
 
 .site-footer {
   border-top: 1px solid var(--line);
+  text-align: center;
   padding: 1.7rem 0;
   color: var(--muted);
-  text-align: center;
 }
 
-/* ===== Animations ===== */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .reveal.visible {
@@ -349,23 +360,22 @@ a {
   transform: translateY(0);
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 980px) {
   .hero-layout,
-  .contact-grid {
+  .contact-grid,
+  .project-columns {
     grid-template-columns: 1fr;
   }
 
   .about-grid,
-  .skills-grid,
-  .projects-grid {
+  .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 760px) {
   .section {
-    padding: 4.5rem 0;
+    padding: 4.4rem 0;
   }
 
   .menu-toggle {
@@ -377,11 +387,11 @@ a {
     top: 74px;
     left: 4%;
     right: 4%;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 12px;
-    background: rgba(17, 26, 49, 0.96);
+    background: rgba(20, 31, 61, 0.97);
     border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem;
+    flex-direction: column;
     display: none;
   }
 
@@ -390,8 +400,7 @@ a {
   }
 
   .about-grid,
-  .skills-grid,
-  .projects-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 }
