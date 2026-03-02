@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jayantan AD - Aspiring Software Developer and Java Developer portfolio showcasing skills, projects, and contact information."
+    />
+    <title>Jayantan AD | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8zJqfH4x4Gf0wG4bR5l9X+AN6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sticky navigation -->
+    <header class="site-header" id="home">
+      <nav class="container navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home">Jayantan AD</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#leetcode">LeetCode</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero section">
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Entry-Level Software Developer Portfolio</p>
+          <h1>Jayantan AD</h1>
+          <h2>Aspiring Software Developer <span>|</span> Java Developer</h2>
+          <p class="hero-intro">
+            I build reliable, user-focused software solutions with a strong foundation in Java,
+            modern web technologies, and structured problem-solving. I am actively seeking an
+            entry-level developer opportunity where I can contribute, learn quickly, and grow with
+            a high-performing engineering team.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#" download>
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              Download Resume
+            </a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+          </div>
+          <div class="social-links" aria-label="Social profile links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Motivated to Deliver Scalable Software</h2>
+          </div>
+          <div class="about-grid">
+            <article class="card">
+              <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+              <p>
+                Bachelor-level academic training in computer science fundamentals, software
+                engineering, and practical development workflows. Built hands-on experience through
+                coursework and self-driven project work.
+              </p>
+            </article>
+            <article class="card">
+              <h3><i class="fa-solid fa-code"></i> Programming Profile</h3>
+              <p>
+                Strong foundation in Java, Python, and JavaScript with a focus on writing clean,
+                maintainable code. Comfortable translating requirements into practical solutions.
+              </p>
+            </article>
+            <article class="card">
+              <h3><i class="fa-solid fa-bullseye"></i> Career Objective</h3>
+              <p>
+                To begin my software engineering career in a role where I can contribute to
+                meaningful products, collaborate effectively, and continuously improve my technical
+                and problem-solving capabilities.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills" class="section muted-section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Core Competencies</p>
+            <h2>Skills Snapshot</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="card skill-card">
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3>Web Technologies</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3>Concepts</h3>
+              <ul>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Data Structures</li>
+                <li>Problem Solving</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects" class="section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Portfolio Work</p>
+            <h2>Featured Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="card project-card">
+              <h3>Task Manager Web App</h3>
+              <p>
+                A productivity-focused task management interface with clean workflow handling,
+                allowing users to create, update, and organize priorities effectively.
+              </p>
+              <p class="tech-stack"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <a href="#" aria-disabled="true">Live Demo (Coming Soon)</a>
+              </div>
+            </article>
+            <article class="card project-card">
+              <h3>Student Performance Analyzer</h3>
+              <p>
+                A Java-based academic analytics project that processes and evaluates student data to
+                provide quick insights and performance summaries.
+              </p>
+              <p class="tech-stack"><strong>Technologies:</strong> Java, OOP, Data Structures</p>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <a href="#" aria-disabled="true">Live Demo (Coming Soon)</a>
+              </div>
+            </article>
+            <article class="card project-card">
+              <h3>Developer Portfolio Website</h3>
+              <p>
+                A responsive personal portfolio designed with a modern SaaS aesthetic to present
+                professional background, technical skills, and project capabilities.
+              </p>
+              <p class="tech-stack"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <a href="#" aria-disabled="true">Live Demo (Coming Soon)</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LeetCode section -->
+      <section id="leetcode" class="section muted-section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Problem Solving</p>
+            <h2>LeetCode Practice</h2>
+          </div>
+          <article class="card leetcode-card">
+            <p>
+              I consistently strengthen my algorithmic thinking and coding speed through LeetCode.
+              My practice routine focuses on arrays, strings, dynamic programming, and interview
+              patterns relevant to entry-level software developer roles.
+            </p>
+            <a class="btn btn-primary" href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
+              Visit LeetCode Profile
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Get In Touch</p>
+            <h2>Let’s Connect</h2>
+          </div>
+          <div class="contact-grid">
+            <article class="card contact-info">
+              <h3>Contact Information</h3>
+              <p><i class="fa-solid fa-envelope"></i> jayantan@example.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> India</p>
+              <div class="social-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Send a Message</h3>
+              <form class="contact-form" id="contact-form" novalidate>
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="your.email@example.com" required />
+                </label>
+                <label>
+                  Message
+                  <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Jayantan AD. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
